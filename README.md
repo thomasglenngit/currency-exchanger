@@ -19,11 +19,7 @@ _._
 
 ## Setup/Installation Requirements
 
-* Clone file from https://github.com/thomasglenngit/movieFinder as a .zip file. 
-* When .zip file appears in your desktop, click on file called, "index.html".
-* This will open the application in your web-browser.
-* Enjoy the result!
-* Alternatively, view this application on your web browser at: https://thomasglenngit.github.io/movieFinder
+
 
 
 ## Known Bugs
