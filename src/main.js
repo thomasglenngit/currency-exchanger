@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     (async () => {
       // console.log("this should contain all movies up to this point that we've added: " + movieService.movieArray);
-      const response = await currencyService.getCurrencySelection(movie);
+      const response = await currencyService.getCurrencySelection(currency);
       getElements(response, currency);
     })();
 
