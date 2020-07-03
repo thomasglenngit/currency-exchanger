@@ -7,10 +7,12 @@ import "./styles.css";
 
 let newResponse = null;
 let currencyService = new CurrencyService();
-
+        
 $(document).ready(function () {
   $("#currency-form").submit(function (event) {
     event.preventDefault();
+    // let number = parseInt($("#numberSearch").val());
+    $("#numberSearch").val("");
     let currency = $("#currencySearch").val();
     $("#currencySearch").val("");
     $("#list").show();
@@ -29,12 +31,12 @@ $(document).ready(function () {
         
         console.log(response);
 
-        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.currency}<br></li>`);
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${parseInt(response.conversion_rates.currency)}<br></li>`);
         
 
       } else {
         newResponse =  null;
-        $("#list").html(`"<li>" No movies for you!"</li>"`);
+        $("#list").html(`"<li>" No money for you!"</li>"`);
         $("#list").html(
           `<li> Please check your inputs and try again! </li>`
         );

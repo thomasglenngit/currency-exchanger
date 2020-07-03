@@ -10,7 +10,7 @@ export class CurrencyService {
         `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${currency}`
         // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${movie}`
       );
-      // console.log("api run:" + response);
+      console.log(currency);
       let jsonifiedResponse;
       if (response.ok && response.status == 200) {
         jsonifiedResponse = await response.json();
