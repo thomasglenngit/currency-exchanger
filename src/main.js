@@ -31,7 +31,7 @@ $(document).ready(function () {
         
         console.log(response);
 
-        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${parseInt(response.conversion_rates.currency)}<br></li>`);
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.USD}<br></li>`);
         
 
       } else {
