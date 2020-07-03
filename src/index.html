@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Movie Finder</title>
+    <title>Currency Exchanger</title>
   </head>
   <body>
-    <h1> Movie Finder </h1>
+    <h1>Currency Exchange</h1>
+    <p>Welcom to Currency Exchange. We would be happy to give you the equivalent amount of any currency you wish to find.</p>
+    <form id="currency-form">
+      <label for="currencySearch">Enter your desired currency by country:</label>
+      <input id="currencySearch" type="text">
 
-    <form id="movie-form">
-      <label for="movieSearch">Enter your favorite movie:</label>
-      <input id="movieSearch" type="text">
-
-      <button id="movieSelection" type="submit">Submit</button>
+      <button id="currencySelection" type="submit">Submit</button>
     </form>
-    <div class="addMovie">
-      <p>Add selection to your favorites list!</p>
+    <div class="addCurrency">
+      <p>Add selection to your currency list!</p>
       <button id="add" type="click">Add to list</button>
     </div>
 
     <ul id="list"></ul>
 
-    <div id="faveList">
+    <div id="currencyList">
 
     </div>
   </body>

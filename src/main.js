@@ -5,29 +5,29 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 let newResponse = null;
-let movieService = new CurrencyService();
+let currencyService = new CurrencyService();
 
 $(document).ready(function () {
   $("#movie-form").submit(function (event) {
     event.preventDefault();
-    let movie = $("#movieSearch").val();
-    $("#movieSearch").val("");
+    let currency = $("#currencySearch").val();
+    $("#currencySearch").val("");
     $("#list").show();
-    $("#faveList").hide();
+    $("#currencyList").hide();
     
 
     (async () => {
       // console.log("this should contain all movies up to this point that we've added: " + movieService.movieArray);
-      const response = await movieService.getMovieSelection(movie);
-      getElements(response, movie);
+      const response = await currencyService.getCurrencySelection(movie);
+      getElements(response, currency);
     })();
 
-    function getElements(response, movie) {
+    function getElements(response, currency) {
       if (response) {
         newResponse = response;
         // console.log(response)
 
-        $("#list").html(`<li> Here is your movie: ${movie} The official title is: ${response.results[0].title} ${response.results[0].overview}<br> <img src=https://image.tmdb.org/t/p/w500${response.results[0].poster_path} ></li>`);
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.currency}<br></li>`);
         
       } else {
         newResponse =  null;
@@ -42,10 +42,10 @@ $(document).ready(function () {
 
   $("#add").click(function () {
     movieService.addMovieSelection(newResponse);
-    console.log("This is the whole movie response: " + newResponse)
-    $("#faveList").show();
+    // console.log("This is the currency: " + newResponse)
+    $("#currencyList").show();
     $("#list").hide();
-    $("#faveList").append(`<li>${newResponse.results[0].title}</li>`)
+    $("#currencyList").append(`<li>${response.conversion_rates.currency}</li>`)
     // $("#faveList").append(movieService.movieArray);
     // console.log("This is the title of the newResponse: "
     //   + newResponse.results[0].title);

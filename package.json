@@ -1,7 +1,7 @@
 {
-  "name": "movies",
+  "name": "currencies",
   "version": "1.0.0",
-  "description": "movie finder app",
+  "description": "currency converter app",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode development",
@@ -11,7 +11,7 @@
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "Mariel Hamson, Thomas Glenn, Joseph Pearce",
+  "author": "Thomas Glenn",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
