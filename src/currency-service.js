@@ -1,7 +1,7 @@
 export class CurrencyService {
 
   constructor() {
-  this.currencyArray = [];
+    this.currencyArray = [];
   }
 
   async getCurrencySelection(currency) {
@@ -30,7 +30,7 @@ export class CurrencyService {
     } else {
       // console.log("new:" + newResponse);
       this.currencyArray.push();
-      console.log(newResponse.conversion_rates.currency);
+      // console.log(newResponse.conversion_rates.currency);
       // console.log(this.movieArray);
       // console.log(newResponse.conversion_rates.currency);
     }
