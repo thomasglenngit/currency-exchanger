@@ -7,7 +7,7 @@ export class CurrencyService {
   async getCurrencySelection(currency) {
     try {
       let response = await fetch(
-        `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${currency}?CurrencyKey=${process.env.API_KEY}`
+        `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${currency}?Currency Key=${process.env.API_KEY}`
         // `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${currency}`
         // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${movie}`
       );
@@ -30,7 +30,7 @@ export class CurrencyService {
       return;
     } else {
       // console.log("new:" + newResponse);
-      this.currencyArray.push();
+      this.currencyArray.push(newResponse.conversion_rates.currency);
       // console.log(newResponse.conversion_rates.currency);
       // console.log(this.movieArray);
       // console.log(newResponse.conversion_rates.currency);

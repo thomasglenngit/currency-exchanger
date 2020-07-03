@@ -4,36 +4,34 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-
 let newResponse = null;
 let currencyService = new CurrencyService();
-        
+
 $(document).ready(function () {
-  $("#currency-form").submit(function (event) {
+  $("#currency-form").submit(function(event) {
     event.preventDefault();
     // let number = parseInt($("#numberSearch").val());
-    $("#numberSearch").val("");
+    // $("#numberSearch").val("");
     let currency = $("#currencySearch").val();
     $("#currencySearch").val("");
     $("#list").show();
     $("#currencyList").hide();
 
     
-    (async () => {
-      // console.log("this should contain all movies up to this point that we've added: " + movieService.movieArray);
-      const response = await currencyService.getCurrencySelection(currency);
+    (async () => {     
+      let response = await currencyService.getCurrencySelection(currency);
       getElements(response, currency);
     })();
 
     function getElements(response, currency) {
       if (response) {
-        newResponse = response;
-        
+        // newResponse = response;
+       
         console.log(response);
-
-        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.USD}<br></li>`);
         
-
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.USD}<br></li>`);
+        console.log(currency);
+        
       } else {
         newResponse =  null;
         $("#list").html(`"<li>" No money for you!"</li>"`);
@@ -50,8 +48,7 @@ $(document).ready(function () {
     $("#currencyList").show();
     $("#list").hide();
     $("#currencyList").append(`<li>${newResponse.conversion_rates.currency}</li>`);
-    // $("#faveList").append(movieService.movieArray);
-    // console.log("This is the title of the newResponse: "
-    //   + newResponse.results[0].title);
+    $("#currencyList").append(currencyService.currencyArray);
+
   });
 });
