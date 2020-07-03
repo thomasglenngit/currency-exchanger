@@ -1,11 +1,11 @@
-import { MovieService } from "./../src/movies-service.js";
+import { CurrencyService } from "./currency-service.js";
 import $ from "jquery";
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 let newResponse = null;
-let movieService = new MovieService();
+let movieService = new CurrencyService();
 
 $(document).ready(function () {
   $("#movie-form").submit(function (event) {

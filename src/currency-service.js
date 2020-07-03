@@ -1,4 +1,4 @@
-export class MovieService {
+export class CurrencyService {
 
   constructor() {
   this.movieArray = [];
