@@ -11,9 +11,9 @@ _._
 
 | Spec   |    Input    |  Output | Completed |
 |:----------|:-------------|:------| :-------- |
-| The program should take in a country from the user | "Germany" | no output |    |
-| The program should match the country request with a currency | "Germany" | "EUR" |  |
-| The program should convert the currency to the requested currency | ""  | "Terminator" "He kills everyone"  |   
+| The program should take in a US dollar amount from the user | "500" | no out put | passed |
+| The program should take in a foreign currency ISO from the user | "EUR" (Euros) | no output |  passed for EUR  |
+| The program should convert the input currency amount into the requested currency | ""  |   |   
 | The program should add the converted currency to the user's currency list |  |  |   |
 | The program should display the user's currency list |  |  |  |
 

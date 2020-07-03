@@ -10,8 +10,8 @@ let currencyService = new CurrencyService();
 $(document).ready(function () {
   $("#currency-form").submit(function(event) {
     event.preventDefault();
-    // let number = parseInt($("#numberSearch").val());
-    // $("#numberSearch").val("");
+    let number = parseInt($("#numberSearch").val());
+    $("#numberSearch").val("");
     let currency = $("#currencySearch").val();
     $("#currencySearch").val("");
     $("#list").show();
@@ -29,8 +29,8 @@ $(document).ready(function () {
        
         console.log(response);
         
-        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.USD}<br></li>`);
-        console.log(currency);
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.USD}, and your new foreign currency total is: ${response.conversion_rates.USD *= number} <br></li>`);
+        console.log(currency, number);
         
       } else {
         newResponse =  null;
