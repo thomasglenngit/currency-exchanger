@@ -1,9 +1,9 @@
 
-# _Movie Finder_
+# _Currency Converter_
 
-#### _An application for compliling a list of your favorite movies, July 1st, 2020_
+#### _An application for converting currencies , July 3rd, 2020_
 
-#### By _**Mariel Hamson, Joseph Pearce, Thomas Glenn**_
+#### By _**Thomas Glenn**_
 
 ## Description
 
@@ -11,11 +11,11 @@ _._
 
 | Spec   |    Input    |  Output | Completed |
 |:----------|:-------------|:------| :-------- |
-| The program should take in a movie title request | "Movie Title" | no output |    |
-| The program should match the movie request with an API call | "Beastman" | "a;djfaksjdfja |  |
-| The program should return the movie title (and synopsis) | "Terminator"  | "Terminator" "He kills everyone"  |   
-| The program should add the movie title to the user's "favorites" list |  |  |   |
-| The program should display the user's favorites movie list |  |  |  |
+| The program should take in a country from the user | "Germany" | no output |    |
+| The program should match the country request with a currency | "Germany" | "EUR" |  |
+| The program should convert the currency to the requested currency | ""  | "Terminator" "He kills everyone"  |   
+| The program should add the converted currency to the user's currency list |  |  |   |
+| The program should display the user's currency list |  |  |  |
 
 ## Setup/Installation Requirements
 
