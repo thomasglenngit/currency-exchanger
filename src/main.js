@@ -4,7 +4,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-// let newResponse = null;
+
 let currencyService = new CurrencyService();
 let currency;
 
@@ -13,8 +13,8 @@ $(document).ready(function () {
     event.preventDefault();
     currency = $("#currencySearch").val();
     $("#currencySearch").val("");
-    // let inputNumber = parseInt($("#inputNumber").val());
-    // $("#inputNumber").val("");
+    let inputNumber = parseInt($("#inputNumber").val());
+    $("#inputNumber").val(""); 
     
     $("#list").show();
     $("#currencyList").hide();
@@ -26,11 +26,11 @@ $(document).ready(function () {
 
     function getElements(response, currency) {
       if (response) {
-        // newResponse = response;
-        
-        
-        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates.currency}<br></li>`);
-        
+        console.log("HERE IS THE RESPONSE: ",response)
+        $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates[currency] *= inputNumber}<br></li>`);
+      console.log(response.conversion_rates);
+
+        //         $("#list").html(`<li> Your currency is: ${currency} The converted rate is: ${response.conversion_rates[currency]}<br></li>`);
         
       } else {
         response =  null;
