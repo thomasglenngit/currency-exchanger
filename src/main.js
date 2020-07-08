@@ -26,7 +26,7 @@ $(document).ready(function () {
 
     function getElements(response, currency) {
       if (response) {
-        $("#list").html(`<li> Your currency is: ${currency}.<br></li> <li>The converted rate is: ${response.conversion_rates[currency] *= inputNumber}<br></li>`);        
+        $("#list").html(`<li> Your currency is: ${currency}.<br></li> <li>The converted amount is: ${response.conversion_rates[currency] *= inputNumber}<br></li>`);        
       } else {
         response =  null;
         $("#list").html(`"<li>" No money for you!"</li>"`);
