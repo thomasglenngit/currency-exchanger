@@ -12,19 +12,41 @@ _._
 | Spec   |    Input    |  Output | Completed |
 |:----------|:-------------|:------| :-------- |
 | The program should take in a US dollar amount from the user | "500" | no out put | passed |
-| The program should take in a foreign currency ISO from the user | "EUR" (Euros) | no output |  passed for EUR  |
-| The program should convert the input currency amount into the requested currency | ""  |   |   
-| The program should add the converted currency to the user's currency list |  |  |   |
-| The program should display the user's currency list |  |  |  |
+| The program should take in a foreign currency ISO from the user | "EUR" (Euros) | no output |  passed  |
+| The program should convert the input currency amount into the requested currency | "500 USD"  |  "443 Euros" |   Passed |
+
 
 ## Setup/Installation Requirements
 
+- Opening the file:
+- In your web browser, navigate to https://github.com/thomasglenngit/currencyExchanger.
+- Click the green "Clone or download" button at the right of the screen.
+- Select "Download ZIP."
+- Move "currencyExchanger" folder onto your desktop.
+- Open the currencyExchanger folder.
+- Open your computer's terminal.
+- After the prompt ($) type: "cd currencyExchanger"
+- Once in the currencyExchanger directory, type: npm install and press "Enter.
+- Enter the command "$ npm run build" in the terminal and press "Enter".
+- Enter the command "$ npm run start" in the terminal and press "Enter".
+- The program should open and run with its user interface accessible in your default web browser.
 
+Obtaining an API Key:
+- Create a .env folder in your currencyExchange file. 
+- Navigate via your web browser to: https://www.exchangerate-api.com/
+- Enter your email address in the entry field on the main page.
+- Press the button that says, "Generate a key."
+- The site will give you a key. Copy it and paste it into your .env folder using the following syntax: "API_KEY = *API KEY GOES HERE*"
+- Review any of your Javascript files to see where there are entries requiring API keys (API KEY GOES HERE.)
+- In those areas, substitute the text: ${process.env.API_KEY}.
+SAVE CHANGES.
+- In the terminal prompt, type: "npm run build", then press return.
+- Then, type: "npm run start". The program should then load in a new window on your browser.
 
 
 ## Known Bugs
 
-_At the present moment, there are no known bugs. (6.22.2020).
+_At the present moment, there are no known bugs. (7.7.2020).
 
 ## Support and contact details
 
@@ -33,7 +55,7 @@ Contact me for any concerns about this application:
 
 ## Technologies Used
 
-.html, .css, JavaScript, Bootstrap-3.4.1, jQuery-3.5.1
+.html, .css, JavaScript, Bootstrap-3.4.1, jQuery-3.5.1, webpack, .JSON, .babelrc, .env, 
 
 ### License
 
