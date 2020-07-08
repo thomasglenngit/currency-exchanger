@@ -1,2 +1,32 @@
 
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 25px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/bull.jpg");
+  color: white;
+  
+}
 
+h1 {
+  font-size: 90px;
+  color: goldenrod;
+}
+
+#inputNumber {
+  width: 40%;
+}
+
+#currencySearch {
+  width: 40%
+}
+
+#currencySubmit {
+  margin: 15px;
+  background-color: goldenrod;
+  color: white;
+}
+
+li .child {
+  color: goldenrod;
+
+}

@@ -1,13 +1,10 @@
 export class CurrencyService {
 
-  
-
   async getCurrencySelection(currency) {
     try {
       let response = await fetch(
-        `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD?Currency Key=${process.env.API_KEY}`
-        // `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/${currency}`
-        // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.API_KEY}&query=${movie}`
+        `https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`
+   
       );
       console.log(currency);
 
@@ -22,16 +19,4 @@ export class CurrencyService {
       return false;
     }
   }
-
-  // addCurrencySelection(newResponse) {
-  //   if (!newResponse) {
-  //     return;
-  //   } else {
-  //     // console.log("new:" + newResponse);
-  //     this.currencyArray.push(newResponse.conversion_rates.currency);
-  //     // console.log(newResponse.conversion_rates.currency);
-  //     // console.log(this.movieArray);
-  //     // console.log(newResponse.conversion_rates.currency);
-  //   }
-  // }
 }
