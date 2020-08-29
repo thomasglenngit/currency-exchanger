@@ -1,15 +1,15 @@
 
-# _Currency Converter_
+**<h1 align = 'center'>Currency Converter**
 
 <h1 align='center'><img width='900' height='450' src='https://www.thebalance.com/thmb/X5rd2DmsDWDvL51qstjdSs0cGCo=/2121x1414/filters:fill(auto,1)/foreigncurrencypipvalues-5a0207bbbeba33001adb56a3.jpg'><br>
 
-#### _An application for converting currencies , July 3rd, 2020_
+*<h2 align ='center'>An application for converting currencies , July 3rd, 2020*
 
-#### By _**Thomas Glenn**_
+*<h2 align ='center'>By Thomas Glenn*
 
 ## Description
 
-_._
+
 
 | Spec   |    Input    |  Output | Completed |
 |:----------|:-------------|:------| :-------- |
