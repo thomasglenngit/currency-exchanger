@@ -50,10 +50,6 @@ SAVE CHANGES.
 
 _At the present moment, there are no known bugs. (7.7.2020).
 
-## Support and contact details
-
-Contact me for any concerns about this application:
-<thomasgrantglenn@mac.com>
 
 ## Technologies Used
 
