@@ -1,6 +1,8 @@
 
 # _Currency Converter_
 
+<h1 align='center'><img width='900' height='450' src='https://www.thebalance.com/thmb/X5rd2DmsDWDvL51qstjdSs0cGCo=/2121x1414/filters:fill(auto,1)/foreigncurrencypipvalues-5a0207bbbeba33001adb56a3.jpg'><br>
+
 #### _An application for converting currencies , July 3rd, 2020_
 
 #### By _**Thomas Glenn**_
@@ -59,7 +61,10 @@ Contact me for any concerns about this application:
 
 ### License
 
-* This application is licensed under the MIT license:
+* This application is licensed under the MIT license: 
+![alt text][logo]
+
+[logo]: https://img.shields.io/bower/l/bootstrap 'MIT License'
 
 Copyright © 2020 **_Thomas Glenn_**
 
